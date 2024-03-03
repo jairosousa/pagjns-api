@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: pagjns-api
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics
+  metrics:
+    tags:
+      application: ${spring.application.name}
