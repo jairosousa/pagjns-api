@@ -22,4 +22,7 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Build with Success
-        run: echo "Build realizado com sucesso"
+        run: |
+          echo "REPO_NAME=${{ github.event.repository.name }}" >> $GITHUB_ENV
+          echo $REPO_NAME:$(date +%s)
+          echo "Build realizado com sucesso"
