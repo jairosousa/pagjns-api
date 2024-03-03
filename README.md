@@ -19,3 +19,7 @@ mvn spring-boot:build-image
 ```shell
 docker run --name pagjns -p 8080:8080 jnsousa/pagjns
 ```
+
+## Spring Actuator
+
+[http://localhost:8080/actuator](http://localhost:8080/actuator)
